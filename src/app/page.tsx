@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <>
@@ -23,7 +25,7 @@ export default function Home() {
                   type="button"
                   className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 >
-                  Get started
+                  <Link href="/login">Get started</Link>
                 </button>
                 <button
                   data-collapse-toggle="navbar-sticky"
@@ -92,7 +94,7 @@ export default function Home() {
           </nav>
         </div>
 
-        <div className="CardContainer flex flex-col items-center justify-center space-y-5 pt-20 pb-10">
+        <div className="CardContainer flex flex-row items-center justify-center space-x-5 pt-40 pb-20">
           <div className="Card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <img
               className="rounded-t-lg"
@@ -373,7 +375,6 @@ export default function Home() {
             </div>
           </footer>
         </div>
-        
       </div>
     </>
   );
