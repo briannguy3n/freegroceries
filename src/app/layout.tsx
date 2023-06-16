@@ -15,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className="h-full flex-col justify-center items-center"
+        style={{ backgroundColor: "#082032" }}
+      >
+        {children}
+      </body>
     </html>
   );
 }
