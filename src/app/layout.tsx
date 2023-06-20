@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className="h-full flex-col justify-center items-center"
-        style={{ backgroundColor: "#082032" }}
+        style={{ backgroundColor: "#100e42" }}
       >
         {children}
       </body>

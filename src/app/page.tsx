@@ -3,11 +3,12 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <div
-        className="EntireBody "
-      >
+      <div className="EntireBody ">
         <div className="NavBar">
-          <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+          <nav
+            className="bg-white  fixed w-full z-20 top-0 left-0 border-b border-gray-200 "
+            style={{ backgroundColor: "#1e1e54" }}
+          >
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
               <a href="https://flowbite.com/" className="flex items-center">
                 <img
@@ -53,7 +54,10 @@ export default function Home() {
                 className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                 id="navbar-sticky"
               >
-                <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <ul
+                  className="flex flex-col p-4 md:p-0 mt-4 font-medium border  rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  "
+                  style={{ backgroundColor: "#1e1e54" }}
+                >
                   <li>
                     <a
                       href="#"
@@ -94,7 +98,10 @@ export default function Home() {
         </div>
 
         <div className="CardContainer flex flex-row items-center justify-center space-x-5 pt-40 pb-20">
-          <div className="Card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div
+            className="Card max-w-sm bg-white border border-gray-200 rounded-lg shadow "
+            style={{ backgroundColor: "#1e1e54" }}
+          >
             <img
               className="rounded-t-lg"
               src="https://flowbite.com/docs/images/blog/image-1.jpg"
@@ -131,7 +138,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="Card max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div
+            className="Card max-w-sm bg-white border border-gray-200 rounded-lg shadow "
+            style={{ backgroundColor: "#1e1e54" }}
+          >
             <img
               className="rounded-t-lg"
               src="https://flowbite.com/docs/images/blog/image-1.jpg"
@@ -170,7 +180,7 @@ export default function Home() {
         </div>
 
         <div className="footer">
-          <footer className="bg-white dark:bg-gray-900">
+          <footer className="" style={{ backgroundColor: "#1e1e54" }}>
             <div className="mx-auto w-full max-w-screen-xl">
               <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
                 <div>
@@ -277,7 +287,10 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
-              <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+              <div
+                className="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between"
+                style={{ backgroundColor: "#1e1e54" }}
+              >
                 <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
                   © 2023 <a href="https://flowbite.com/">Flowbite™</a>. All
                   Rights Reserved.
