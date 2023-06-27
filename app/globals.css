@@ -17,5 +17,7 @@
 }
 
 body {
+  background-color: rgb(17, 41, 82); /* Replace with the RGB values of bg-sky-900 */
   color: rgb(var(--foreground-rgb));
 }
+
