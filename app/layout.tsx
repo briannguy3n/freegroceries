@@ -3,6 +3,8 @@ import Modal from './components/modals/Modal'
 import { useState } from "react"
 import './globals.css'
 import { Inter } from 'next/font/google'
+import HomePage from './components/home page/HomePage'
+import Sidebar from './components/sidebar/Sidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>{children}
       <ClientOnly>
-        <Modal title="Hello World" isOpen />
+        <HomePage />
+        {/* <Modal title="Hello World" isOpen /> */}
+        <Sidebar />
 
       </ClientOnly>
       
