@@ -1,6 +1,12 @@
 const HomePage = () => {
     return (
-        <div className="h-screen">test</div>
+        <div className="Body h-screen">
+            <div className="CenterSports 
+            flex 
+            justify-center 
+            items-center 
+            h-16 "></div>
+        </div>
       );
 }
  
