@@ -5,6 +5,7 @@ import './globals.css'
 import { Inter } from 'next/font/google'
 import HomePage from './components/home page/HomePage'
 import Sidebar from './components/sidebar/Sidebar'
+import RegisterModal from './components/modals/RegisterModal'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,7 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>{children}
       <ClientOnly>
         <HomePage />
-        <Modal actionLabel="Submit" title="Hello World" isOpen />
+        <RegisterModal />
         <Sidebar />
 
       </ClientOnly>
