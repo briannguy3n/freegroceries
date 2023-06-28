@@ -12,7 +12,7 @@ import Modal from "./Modal"
 import Button from "../Button"
 import Heading from "../Heading"
 import Input from "../inputs/Input"
-
+import { toast } from "react-hot-toast"
 
 const RegisterModal = () => {
   const registerModal = useRegisterModal()
@@ -39,7 +39,7 @@ const RegisterModal = () => {
         registerModal.onClose()
       })
       .catch((error) => {
-        console.log(error)
+        toast.error(error)
       })
       .finally(() => {
         setIsLoading(false)
@@ -48,10 +48,7 @@ const RegisterModal = () => {
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
-      <Heading
-        title="Welcome to Airbnb"
-        subtitle="Create an account!"
-      />
+      <Heading title="Welcome to Airbnb" subtitle="Create an account!" />
       <Input
         id="email"
         label="Email"

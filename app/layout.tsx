@@ -7,6 +7,7 @@ import Sidebar from "./components/sidebar/Sidebar"
 import RegisterModal from "./components/modals/RegisterModal"
 import MenuItem from "./components/navbar/MenuItem"
 import UserMenu from "./components/navbar/UserMenu"
+import ToasterProvider from "./providers/ToasterProvider"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -25,9 +26,10 @@ export default function RootLayout({
       <body className={inter.className}>
         {children}
         <ClientOnly>
+          <ToasterProvider />
           <UserMenu />
-          <HomePage />
           <RegisterModal  />
+          <HomePage />
           <Sidebar />
 
         </ClientOnly>
