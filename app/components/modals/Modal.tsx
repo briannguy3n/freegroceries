@@ -160,6 +160,14 @@ const Modal: React.FC<ModalProps> = ({
                     gap-4 
                     w-full"
                 >
+                  {secondaryAction && secondaryActionLabel && (
+                    <Button
+                      disabled={disabled}
+                      label={secondaryActionLabel}
+                      onClick={handleSecondaryAction}
+                      outline
+                    />
+                  )}
                   <Button
                     disabled={disabled}
                     label={actionLabel}
