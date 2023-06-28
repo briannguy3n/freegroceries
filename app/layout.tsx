@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>{children}
       <ClientOnly>
         <HomePage />
-        {/* <Modal title="Hello World" isOpen /> */}
+        <Modal title="Hello World" isOpen />
         <Sidebar />
 
       </ClientOnly>
