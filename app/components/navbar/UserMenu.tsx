@@ -7,6 +7,7 @@ import MenuItem from "./MenuItem"
 const UserMenu = () => {
   const registerModal = useRegisterModal()
   const [isOpen, setIsOpen] = useState(false)
+  
   return (
     <div>
       <div className="flex flex-col cursor-pointer">
