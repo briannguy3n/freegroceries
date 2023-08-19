@@ -1,19 +1,24 @@
+import NavItem from "./NavItem";
+import {
+  GiAmericanFootballBall,
+  GiPokerHand,
+  GiHorseHead,
+} from "react-icons/gi";
+import { RiTimerFlashFill } from "react-icons/ri";
+import { IoLogoGameControllerA } from "react-icons/io";
+import { AiFillTrophy, AiFillGift } from "react-icons/ai";
+
 const Navbar = () => {
   return (
     <nav className="bg-green-800 p-4">
       <div className="flex justify-evenly">
-        
-        <ul className="flex space-x-20">
-          <li className="text-white">Sports</li>
-          <li className="text-white">Live Betting</li>
-          <li className="text-white">Casino</li>
-          <li className="text-white">Poker</li>
-          <li className="text-white">ESports</li>
-          <li className="text-white">Racebook</li>
-          <li className="text-white">Contests</li>
-          <li className="text-white">Promos</li>
-        </ul>
-              
+        <NavItem title="Sports" icon={<GiAmericanFootballBall />} />
+        <NavItem title="Live Betting" icon={<RiTimerFlashFill />} />
+        <NavItem title="Casino" icon={<GiPokerHand />} />
+        <NavItem title="ESports" icon={<IoLogoGameControllerA />} />
+        <NavItem title="Racebook" icon={<GiHorseHead />} />
+        <NavItem title="Contests" icon={<AiFillTrophy />} />
+        <NavItem title="Promos" icon={<AiFillGift />} />
       </div>
     </nav>
   );
