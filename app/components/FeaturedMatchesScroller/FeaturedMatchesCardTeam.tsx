@@ -3,26 +3,27 @@
 import React, { useState, useEffect } from "react"
 
 const FeaturedMatchesCardTeam = () => {
-  const [matchData, setMatchData] = useState(null)
+    const [sportsData, setSportsData] = useState(null);
+
+  //   The fetched data is stored in the sportsData state variable, which is an object.
+  //   This object contains all the properties returned by the API. You can directly access each property within the JSX using sportsData.propertyName.
 
   useEffect(() => {
-    const apiKey = "YOUR_API_KEY"
-    const apiUrl = "https://api.example.com/data"
+    const apiUrl = 'https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?regions=us&markets=h2h&apiKey=588adf6c8e5ebb8d688bbc14e55f70a4';
 
-    fetch(apiUrl, {
-      headers: {
-        Authorization: `Bearer ${apiKey}`,
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => setMatchData(data))
-      .catch((error) => console.error("Error fetching data:", error))
-  }, [])
+    fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+        console.log(data); // Log the fetched data
+        setSportsData(data);
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  }, []);
 
-  if (!matchData) {
-    return <div>Loading...</div>
-  }
-  
+  //   if (!sportsData) {
+  //     return <div>Loading...</div>
+  //   }
+
   return (
     <div className="flex flex-col items-center justify-center text-white">
       <p>Team Logo Image</p>
