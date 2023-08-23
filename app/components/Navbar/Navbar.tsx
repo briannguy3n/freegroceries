@@ -7,10 +7,11 @@ import {
 import { RiTimerFlashFill } from "react-icons/ri";
 import { IoLogoGameControllerA } from "react-icons/io";
 import { AiFillTrophy, AiFillGift } from "react-icons/ai";
+import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-green-800 p-4">
+    <nav className="bg-freegroceries-100 p-4">
       <div className="flex justify-evenly">
         <NavItem title="Sports" icon={<GiAmericanFootballBall />} />
         <NavItem title="Live Betting" icon={<RiTimerFlashFill />} />
