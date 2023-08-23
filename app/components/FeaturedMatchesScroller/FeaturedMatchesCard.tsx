@@ -14,25 +14,25 @@ const FeaturedMatchesCard = () => {
         flex-col
         justify-center
         items-center
-        gap-2
-        "
+        gap-10
+      "
     >
       <p className="text-white">Wed 16:05</p>
       <div
         className="
         flex
         flex-row
-        gap-2
+        gap-4
         items-center
         justify-center
         w-full
-        mx-auto"
+      "
       >
         <FeaturedMatchesCardTeam />
         <p className="text-white">@</p>
-        <p className="text-white">Away Team</p>
+        <FeaturedMatchesCardTeam />
       </div>
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-10 justify-center">
         <p className="text-white">Home Team Odds</p>
         <p className="text-white">Away Team Odds</p>
       </div>
