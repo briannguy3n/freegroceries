@@ -1,7 +1,10 @@
 import React from "react";
+import FeaturedMatchesCard from "./FeaturedMatchesCard";
 
 const FeaturedMatchesScroller = () => {
-    return ( <div></div> );
+    return ( <div>
+        <FeaturedMatchesCard />
+    </div> );
 }
  
 export default FeaturedMatchesScroller;
