@@ -2,33 +2,72 @@
 
 import React, { useState, useEffect } from "react"
 
-const FeaturedMatchesCardTeam = () => {
-  const [sportsData, setSportsData] = useState<any>(null)
+const FeaturedMatchesCardTeam = (props) => {
+  //   const matches = sportsdata.gamedata.map((match) => {
+  //     return (
+  //       <div
+  //         key={match.id}
+  //         className="flex flex-col items-center justify-center text-white"
+  //       >
+  //         <p>Team Logo Image</p>
+  //         <p>{match.home_team}</p>
+  //         <p>{match.away_team}</p>
+  //       </div>
+  //     )
+  //   })
 
-  //   The fetched data is stored in the sportsData state variable, which is an object.
-  //   This object contains all the properties returned by the API. You can directly access each property within the JSX using sportsData.propertyName.
+  //   return <div>{matches}</div>
+  // }
 
-  React.useEffect(function () {
-    fetch(
-      "https://api.the-odds-api.com/v4/sports/baseball_mlb/odds/?regions=us&markets=h2h&apiKey=588adf6c8e5ebb8d688bbc14e55f70a4"
-    )
-      .then((res) => res.json())
-      .then((data) => setSportsData(data))
-  }, [])
+  // export default FeaturedMatchesCardTeam
+
+  //   --------------------------------
+
+  // Inserting Images based on Team Names
+
+  const teamImageMapping = {
+    "Pittsburgh Pirates":
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pittsburgh_Pirates_logo_2014.svg/1200px-Pittsburgh_Pirates_logo_2014.svg.png",
+    "St. Louis Cardinals":
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLkmonMjcaIOCQbS9MSsCJShnTfIu51HUNqa_75o&s",
+    // Add more team names and URLs here
+  }
+
+  const teamLogoUrl = teamImageMapping[props.teamname]
+
+  //   --------------------------------
 
   return (
-    <div className="flex flex-col items-center justify-center text-white">
-      {sportsData &&
-        sportsData.data &&
-        sportsData.data.length > 0 &&
-        sportsData.data.map(match => (
-          <div key={match.id}>
-            <p>Team Logo Image</p>
-            <p>{match.home_team}</p> {/* Replace with the home_team value */}
-          </div>
-        ))}
-    </div>
-  );
-};
+    <div
+      className="
+      flex
+      flex-col
+      items-center
+      justify-center
+      text-white
+      "
+    >
+      <img
+        className="h-16 pb-4"
+        src={teamLogoUrl}
+        alt={`${props.teamname} Logo`}
+      />
+      <p className="pb-14">{props.teamname}</p>
 
-export default FeaturedMatchesCardTeam;
+      <div className="w-full h-full flex items-center justify-center hover:bg-freegroceries-200 ">
+        <a
+          href=""
+          className="
+        text-yellow-400
+        
+        
+          "
+        >
+          {props.odds}
+        </a>
+      </div>
+    </div>
+  )
+}
+
+export default FeaturedMatchesCardTeam
