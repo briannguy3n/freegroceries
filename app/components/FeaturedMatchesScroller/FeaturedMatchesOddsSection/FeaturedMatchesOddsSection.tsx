@@ -1,13 +1,11 @@
 import sportsdata from "@/app/sportsdata"
 import FeaturedMatchesTeamOdds from "./FeaturedMatchesTeamOdds"
+import { useMatchContext } from "@/app/MatchContext"
 
 const FeaturedMatchesOddsSection = () => {
+  const { firstMatch } = useMatchContext()
 
-  const firstMatch = sportsdata.gamedata[0]
-
-  //------------------------------
-
-  // Calculating Betting Odds
+  // #region Calculating Betting Odds 
 
   const homeTeamDecimalOdds =
     firstMatch.bookmakers[0].markets[0].outcomes[0].price
@@ -28,20 +26,14 @@ const FeaturedMatchesOddsSection = () => {
   const homeTeamAmericanOdds = calculateAmericanOdds(homeTeamDecimalOdds)
   const awayTeamAmericanOdds = calculateAmericanOdds(awayTeamDecimalOdds)
 
-  //------------------------------
+  // #endregion
 
-  
+
   return (
     <div className="flex flex-row w-full items-center justify-center">
       <FeaturedMatchesTeamOdds teamPlace="1" teamOdds={homeTeamAmericanOdds} />
       <FeaturedMatchesTeamOdds teamPlace="2" teamOdds={awayTeamAmericanOdds} />
 
-      {/* 
-        <div className="hover:bg-freegroceries-200">
-            <span className="text-white pr-2">2</span>
-            <span className="font-light">awayTeamOdds</span>
-        </div>  
-      */}
     </div>
   )
 }
