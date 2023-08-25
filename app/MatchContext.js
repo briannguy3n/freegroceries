@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from "react";
-import matchdata from "./gamedata";
-import teamLibrary from "./utils/teamdata"
+import matchdata from "./data/gamedata";
+import teamLibrary from "./data/teamdata"
 
 //---------------------------
 
