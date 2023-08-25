@@ -1,17 +1,20 @@
 "use client"
 
+
+
 import React, { useState, useEffect } from "react"
 
-const FeaturedGameTeam = ({}) => {
+// @ts-ignore
+const FeaturedGameTeam = (props) => {
 
   return (
-    <div className="TeamLogoAndName flex flex-col items-center">
+    <div className="TeamLogoAndName flex flex-col items-center w-full">
       <img
         className="h-16 pb-4"
-        // src={teamLogoUrl}
-        // alt={`${teamname} Logo`}
+        src={props.logo}
+        alt={`${props.teamName} Logo`}
       />
-      {/* <p className="text-white font-semibold">{teamname}</p> */}
+      <p className="text-white font-semibold">{props.teamName}</p>
     </div>
   )
 }
