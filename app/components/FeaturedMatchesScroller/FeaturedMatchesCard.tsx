@@ -37,8 +37,6 @@ const FeaturedMatchesCard = () => {
   return (
     <div
       className="
-      pt-6
-      px-6
         bg-freegroceries-900
         rounded-lg
         shadow
@@ -57,7 +55,6 @@ const FeaturedMatchesCard = () => {
         flex-row
         items-center
         justify-center
-        gap-8
         w-full
         mt-4
       "
@@ -85,7 +82,7 @@ const FeaturedMatchesCard = () => {
         />
       </div>
 
-      <hr className="-mx-22 border border-gray-600 mt-4 w-full relative bottom-20" />
+      {/* <hr className="-mx-22 border border-gray-600 mt-4 w-full relative bottom-20" /> */}
     </div>
   )
 }
