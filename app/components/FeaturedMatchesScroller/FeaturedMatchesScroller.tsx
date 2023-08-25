@@ -5,8 +5,10 @@ const FeaturedMatchesScroller = () => {
   return (
     <div className="flex flex-row gap-6 w-full items-center justify-center">
       <FeaturedMatchesCard />
-      <FeaturedMatchesCard />
-      <FeaturedMatchesCard />
+
+      {/* <FeaturedMatchesCard />
+      <FeaturedMatchesCard /> */}
+
     </div>
   )
 }
