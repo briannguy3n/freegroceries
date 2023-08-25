@@ -2,13 +2,13 @@ import FeaturedGameTeam from "./FeaturedGameTeam"
 import { useMatchContext } from "@/app/MatchContext"
 
 
-const FeaturedGameMatchUp = ({  }) => {
+const FeaturedGameMatchup = ({  }) => {
   const { firstMatch, teamLibrary } = useMatchContext()
 
 
   // #region Abbreviating Team Names 
-  const { abbreviation: homeTeamAbbreviation, mascot: homeMascot } = teamLibrary[firstMatch.home_team];
-  const { abbreviation: awayTeamAbbreviation, mascot: awayMascot } = teamLibrary[firstMatch.away_team];
+  const { abbreviation: homeTeamAbbreviation, mascot: homeMascot, imageLogo: homeImageLogo } = teamLibrary[firstMatch.home_team];
+  const { abbreviation: awayTeamAbbreviation, mascot: awayMascot, imageLogo: awayImageLogo } = teamLibrary[firstMatch.away_team];
 
   const finalHomeTeamName = `${homeTeamAbbreviation} ${homeMascot}`;
   const finalAwayTeamName = `${awayTeamAbbreviation} ${awayMascot}`;
@@ -17,12 +17,17 @@ const FeaturedGameMatchUp = ({  }) => {
 
 
 return (
-  <div className="flex flex-row items-center justify-center w-full gap-10 mb-2">
-    <FeaturedGameTeam teamname={finalHomeTeamName} />
+  <div className="flex flex-row items-center justify-center w-full gap-2 mb-2">
+    <FeaturedGameTeam teamName={finalHomeTeamName} logo={homeImageLogo}/>
     <p className="text-white bottom-4 relative">@</p>
-    <FeaturedGameTeam teamname={finalAwayTeamName} />
+    <FeaturedGameTeam teamName={finalAwayTeamName} logo={awayImageLogo} />
   </div>
 );
 };
 
-export default FeaturedGameMatchUp;
+export default FeaturedGameMatchup;
+
+/*
+
+Ok think this through. I need to get the URL from teamLibrary over to the team 
+*/
