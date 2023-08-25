@@ -1,6 +1,6 @@
 import React from "react"
 
-const FeaturedMatchesTeamOdds = ({ teamPlace, teamOdds }) => {
+const FeaturedGameTeamOdds = ({ teamPlace, teamOdds }) => {
   return (
     <div className="w-full h-20 hover:bg-freegroceries-200 items-center justify-center flex">
       <span className="font-light text-white pr-2">{teamPlace}</span>
@@ -16,4 +16,4 @@ const FeaturedMatchesTeamOdds = ({ teamPlace, teamOdds }) => {
   )
 }
 
-export default FeaturedMatchesTeamOdds
+export default FeaturedGameTeamOdds

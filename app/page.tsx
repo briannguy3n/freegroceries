@@ -3,7 +3,7 @@
 import Register from "./components/Register"
 import Login from "./components/Login"
 import Navbar from "./components/Navbar/Navbar"
-import FeaturedMatchesScroller from "./components/FeaturedMatchesScroller/FeaturedMatchesScroller"
+import FeaturedGameScroller from "./components/FeaturedGameScroller/FeaturedGameScroller"
 import React from "react"
 import { MatchProvider } from "./MatchContext"
 
@@ -14,7 +14,7 @@ export default function Home() {
       <Navbar />
       <div className="flex w-screen h-screen justify-center items-center">
         <MatchProvider>
-          <FeaturedMatchesScroller />
+          <FeaturedGameScroller />
         </MatchProvider>
         {/* <Register /> */}
         {/* <Login /> */}

@@ -1,17 +1,19 @@
 import React from "react";
-import FeaturedMatchesMatchUp from "./FeaturedMatchesMatchUp"
-import FeaturedMatchesOddsSection from "./FeaturedMatchesOddsSection/FeaturedMatchesOddsSection"
+import FeaturedGameMatchup from "./FeaturedGameMatchup"
+import FeaturedGameOddsSection from "./FeaturedGameOddsSection/FeaturedGameOddsSection"
 import { useMatchContext } from "@/app/MatchContext";
 
-const FeaturedMatchesCard = () => {
+const FeaturedGameCard = () => {
   const { firstMatch } = useMatchContext();
 
 // #region changeDateTime
 
+// @ts-ignore
 const changeDateTime = (dateTime) => {
   const options = { weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false };
   const date = new Date(dateTime);
-
+  
+  // @ts-ignore
   return date.toLocaleString('en-US', options);
 };
 
@@ -28,13 +30,13 @@ const formattedDateTime = changeDateTime(firstMatch.commence_time);
         <p className="text-white mt-10">{formattedDateTime}</p>
       </div>
 
-      <FeaturedMatchesMatchUp />
+      <FeaturedGameMatchup />
 
       <hr className="border border-freegroceries-200 w-full mt-4" />
 
-      <FeaturedMatchesOddsSection />
+      <FeaturedGameOddsSection />
     </div>
   )
 }
 
-export default FeaturedMatchesCard
+export default FeaturedGameCard

@@ -1,5 +1,6 @@
 import React, { createContext, useContext } from "react";
-import matchesdata from "./matchesdata";
+import matchdata from "./data/gamedata";
+import teamLibrary from "./data/teamdata"
 
 //---------------------------
 
@@ -10,10 +11,10 @@ export const useMatchContext = () => {
 };
 
 export const MatchProvider = ({ children }) => {
-  const firstMatch = matchesdata.gamedata[0];
+  const firstMatch = matchdata.gamedata[0];
 
   return (
-    <MatchContext.Provider value={{ firstMatch }}>
+    <MatchContext.Provider value={{ firstMatch, teamLibrary }}>
       {children}
     </MatchContext.Provider>
   );
