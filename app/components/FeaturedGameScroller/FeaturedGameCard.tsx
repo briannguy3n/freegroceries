@@ -1,5 +1,6 @@
-import React from "react";
+// @ts-ignore
 import FeaturedGameMatchup from "./FeaturedGameMatchup"
+import React from "react";
 import FeaturedGameOddsSection from "./FeaturedGameOddsSection/FeaturedGameOddsSection"
 import { useMatchContext } from "@/app/MatchContext";
 
@@ -12,7 +13,7 @@ const FeaturedGameCard = () => {
 const changeDateTime = (dateTime) => {
   const options = { weekday: 'short', hour: '2-digit', minute: '2-digit', hour12: false };
   const date = new Date(dateTime);
-  
+
   // @ts-ignore
   return date.toLocaleString('en-US', options);
 };
