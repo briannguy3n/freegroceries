@@ -22,13 +22,16 @@ const formattedDateTime = changeDateTime(firstMatch.commence_time);
 
 
   return (
-    <div className="bg-freegroceries-900 rounded-lg shadow flex flex-col justify-center items-center gap-4 w-96">
+    <div className="bg-freegroceries-900 rounded-lg shadow flex flex-col justify-center items-center w-[500px] ">
       
-      <div className="DateSection flex flex-col items-center justify-center">
-        <p className="text-white mt-4">{formattedDateTime}</p>
+      <div className="DateTime flex flex-col items-center justify-center">
+        <p className="text-white mt-10">{formattedDateTime}</p>
       </div>
 
       <FeaturedMatchesMatchUp />
+
+      <hr className="border border-freegroceries-200 w-full mt-4" />
+
       <FeaturedMatchesOddsSection />
     </div>
   )
