@@ -11,7 +11,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-freegroceries-100 p-4">
+    <nav className="bg-freegroceries-900 p-4">
       <div className="flex justify-evenly">
         <NavItem title="Sports" icon={<GiAmericanFootballBall />} />
         <NavItem title="Live Betting" icon={<RiTimerFlashFill />} />
