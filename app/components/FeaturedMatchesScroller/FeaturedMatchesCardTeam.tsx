@@ -28,8 +28,10 @@ const FeaturedMatchesCardTeam = (props) => {
   const teamImageMapping = {
     "Pittsburgh Pirates":
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Pittsburgh_Pirates_logo_2014.svg/1200px-Pittsburgh_Pirates_logo_2014.svg.png",
+
     "St. Louis Cardinals":
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrLkmonMjcaIOCQbS9MSsCJShnTfIu51HUNqa_75o&s",
+
     // Add more team names and URLs here
   }
 
@@ -47,6 +49,7 @@ const FeaturedMatchesCardTeam = (props) => {
       text-white
       "
     >
+
       <img
         className="h-16 pb-4"
         src={teamLogoUrl}
@@ -66,6 +69,7 @@ const FeaturedMatchesCardTeam = (props) => {
           {props.odds}
         </a>
       </div>
+
     </div>
   )
 }

@@ -86,8 +86,6 @@ const FeaturedMatchesCard = () => {
       </div>
 
       <hr className="-mx-22 border border-gray-600 mt-4 w-full relative bottom-20" />
-    
-
     </div>
   )
 }
