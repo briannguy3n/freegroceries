@@ -1,7 +1,7 @@
-"use client"
-
 import React, { createContext, useContext } from "react";
 import sportsdata from "./sportsdata";
+
+//---------------------------
 
 const MatchContext = createContext();
 
