@@ -2,9 +2,7 @@
 
 import React, { useState, useEffect } from "react"
 
-const FeaturedMatchesTeam = (props) => {
- 
-
+const FeaturedMatchesTeam = ({teamname}) => {
   //   --------------------------------
 
   // Inserting Images based on Team Names
@@ -19,35 +17,18 @@ const FeaturedMatchesTeam = (props) => {
     // Add more team names and URLs here
   }
 
-  const teamLogoUrl = teamImageMapping[props.teamname]
+  const teamLogoUrl = teamImageMapping[teamname]
 
   //   --------------------------------
 
   return (
-    <div
-      className="
-      flex
-      flex-col
-      items-center
-      justify-center
-      text-white
-      w-full
-      "
-    >
-
-      <div className="TeamLogoAndName flex flex-col items-center">
-        <img
-          className="h-16 pb-4"
-          src={teamLogoUrl}
-          alt={`${props.teamname} Logo`}
-        />
-        <p className="">{props.teamname}</p>
-      </div>
-
-      {/* <hr className="border border-gray-600 w-full" /> */}
-      
-     
-
+    <div className="TeamLogoAndName flex flex-col items-center">
+      <img
+        className="h-16 pb-4"
+        src={teamLogoUrl}
+        alt={`${teamname} Logo`}
+      />
+      <p className="text-white">{teamname}</p>
     </div>
   )
 }
