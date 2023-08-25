@@ -1,10 +1,10 @@
-import FeaturedMatchesTeam from "./FeaturedMatchesTeam"
+import FeaturedGameTeam from "./FeaturedGameTeam"
 import { useMatchContext } from "@/app/MatchContext"
-import { abbreviateTeamName, teamLibrary } from "../../utils/abbreviateTeamName"
 
 
-const FeaturedMatchesMatchUp = ({  }) => {
-  const { firstMatch } = useMatchContext()
+const FeaturedGameMatchUp = ({  }) => {
+  const { firstMatch, teamLibrary } = useMatchContext()
+
 
   // #region Abbreviating Team Names 
   const { abbreviation: homeTeamAbbreviation, mascot: homeMascot } = teamLibrary[firstMatch.home_team];
@@ -18,11 +18,11 @@ const FeaturedMatchesMatchUp = ({  }) => {
 
 return (
   <div className="flex flex-row items-center justify-center w-full gap-10 mb-2">
-    <FeaturedMatchesTeam teamname={finalHomeTeamName} />
+    <FeaturedGameTeam teamname={finalHomeTeamName} />
     <p className="text-white bottom-4 relative">@</p>
-    <FeaturedMatchesTeam teamname={finalAwayTeamName} />
+    <FeaturedGameTeam teamname={finalAwayTeamName} />
   </div>
 );
 };
 
-export default FeaturedMatchesMatchUp;
+export default FeaturedGameMatchUp;
