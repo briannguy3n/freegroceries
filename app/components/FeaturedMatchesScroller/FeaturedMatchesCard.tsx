@@ -32,13 +32,13 @@ const FeaturedMatchesCard = () => {
   const homeTeamAmericanOdds = calculateAmericanOdds(homeTeamDecimalOdds)
   const awayTeamAmericanOdds = calculateAmericanOdds(awayTeamDecimalOdds)
 
+  const changeDateTime = () => {}
+
   //   --------------------------------
 
   return (
     <div
       className="
-      pt-6
-      px-6
         bg-freegroceries-900
         rounded-lg
         shadow
@@ -47,9 +47,13 @@ const FeaturedMatchesCard = () => {
         justify-center
         items-center
         gap-4
+        w-96
       "
     >
-      <p className="text-white">Wed 16:05</p>
+      <div className="flex flex-col items-center justify-center">
+        <p className="text-white mt-4">{firstMatch.commence_time}</p>
+        <p className="text-white">Wed 16:05</p>
+      </div>
 
       <div
         className="
@@ -57,7 +61,6 @@ const FeaturedMatchesCard = () => {
         flex-row
         items-center
         justify-center
-        gap-8
         w-full
         mt-4
       "
@@ -72,7 +75,7 @@ const FeaturedMatchesCard = () => {
           }
         />
 
-        <p className="text-white relative bottom-4">@</p>
+        <p className="text-white bottom-14 relative">@</p>
 
         <FeaturedMatchesCardTeam
           teamname={firstMatch.away_team}
@@ -84,8 +87,6 @@ const FeaturedMatchesCard = () => {
           }
         />
       </div>
-
-      <hr className="-mx-22 border border-gray-600 mt-4 w-full relative bottom-20" />
     </div>
   )
 }

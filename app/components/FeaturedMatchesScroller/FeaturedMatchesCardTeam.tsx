@@ -47,17 +47,22 @@ const FeaturedMatchesCardTeam = (props) => {
       items-center
       justify-center
       text-white
+      w-full
       "
     >
 
-      <img
-        className="h-16 pb-4"
-        src={teamLogoUrl}
-        alt={`${props.teamname} Logo`}
-      />
-      <p className="pb-14">{props.teamname}</p>
+      <div className="TeamLogoAndName flex flex-col items-center">
+        <img
+          className="h-16 pb-4"
+          src={teamLogoUrl}
+          alt={`${props.teamname} Logo`}
+        />
+        <p className="pb-14">{props.teamname}</p>
+      </div>
 
-      <div className="w-full h-full flex items-center justify-center hover:bg-freegroceries-200 ">
+      <hr className="border border-gray-600 w-full" />
+      
+      <div className="Odds w-full py-4 flex items-center justify-center hover:bg-freegroceries-200 ">
         <a
           href=""
           className="
