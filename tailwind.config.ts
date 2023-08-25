@@ -13,10 +13,14 @@ module.exports = withMT({
       colors: {
         freegroceries: {
           50: "#037d50",
-          100: "#026440",
+          100: "#1f493e",
           200: "#024b30",
-          900: "#013220"
+          800: "#17302b",
+          900: "#102923"
         },
+        gold: {
+          200: "#d4ac66"
+        }
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
