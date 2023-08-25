@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from "react";
-import sportsdata from "./sportsdata";
+import matchesdata from "./matchesdata";
 
 //---------------------------
 
@@ -10,7 +10,7 @@ export const useMatchContext = () => {
 };
 
 export const MatchProvider = ({ children }) => {
-  const firstMatch = sportsdata.gamedata[0];
+  const firstMatch = matchesdata.gamedata[0];
 
   return (
     <MatchContext.Provider value={{ firstMatch }}>

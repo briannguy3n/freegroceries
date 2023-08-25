@@ -28,7 +28,7 @@ const FeaturedMatchesTeam = ({teamname}) => {
         src={teamLogoUrl}
         alt={`${teamname} Logo`}
       />
-      <p className="text-white">{teamname}</p>
+      <p className="text-white font-semibold">{teamname}</p>
     </div>
   )
 }
