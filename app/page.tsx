@@ -8,12 +8,14 @@ import FeaturedGameScroller from "./components/FeaturedGameScroller/FeaturedGame
 import { MatchProvider } from "./util/MatchContext"
 import React from "react"
 import Navbar from "./components/Navbar/Navbar"
+import SectionHeader from "./components/SectionHeader"
 
 
 export default function Home() {
   return (
     <div className="bg-freegroceries-100 h-screen w-screen">
       <Navbar />
+      <SectionHeader />
       <BaseballBettingPage />
       
     </div>
