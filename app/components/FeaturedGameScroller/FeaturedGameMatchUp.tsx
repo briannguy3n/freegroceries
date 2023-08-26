@@ -1,5 +1,5 @@
 import FeaturedGameTeam from "./FeaturedGameTeam"
-import { useMatchContext } from "@/app/MatchContext"
+import { useMatchContext } from "@/app/util/MatchContext";
 
 
 const FeaturedGameMatchup = ({  }) => {

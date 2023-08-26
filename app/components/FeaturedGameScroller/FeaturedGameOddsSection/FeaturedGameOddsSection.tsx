@@ -1,5 +1,5 @@
 import FeaturedGameTeamOdds from "./FeaturedGameTeamOdds"
-import { useMatchContext } from "@/app/MatchContext"
+import { useMatchContext } from "@/app/util/MatchContext";
 
 const FeaturedGameOddsSection = () => {
   const { firstMatch } = useMatchContext()

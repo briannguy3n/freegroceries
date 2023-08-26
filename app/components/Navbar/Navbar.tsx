@@ -1,28 +1,9 @@
-import NavItem from "./NavItem";
-import {
-  GiAmericanFootballBall,
-  GiPokerHand,
-  GiHorseHead,
-} from "react-icons/gi";
-import { RiTimerFlashFill } from "react-icons/ri";
-import { IoLogoGameControllerA } from "react-icons/io";
-import { AiFillTrophy, AiFillGift } from "react-icons/ai";
-import React from "react";
-
 const Navbar = () => {
-  return (
-    <nav className="bg-freegroceries-900 p-4">
-      <div className="flex justify-evenly">
-        <NavItem title="Sports" icon={<GiAmericanFootballBall />} />
-        <NavItem title="Live Betting" icon={<RiTimerFlashFill />} />
-        <NavItem title="Casino" icon={<GiPokerHand />} />
-        <NavItem title="ESports" icon={<IoLogoGameControllerA />} />
-        <NavItem title="Racebook" icon={<GiHorseHead />} />
-        <NavItem title="Contests" icon={<AiFillTrophy />} />
-        <NavItem title="Promos" icon={<AiFillGift />} />
-      </div>
-    </nav>
-  );
-};
+  return <nav className="bg-freegroceries-900 h-10 flex gap-10">
+    <h1 className="uppercase text-white font-bold text-3xl">Logo</h1>
+    <h1 className="uppercase text-white font-bold text-3xl">Join</h1>
+    <h1 className="uppercase text-white font-bold text-3xl">Login</h1>
+  </nav>
+}
 
-export default Navbar;
+export default Navbar
