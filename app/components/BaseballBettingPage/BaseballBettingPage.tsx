@@ -1,13 +1,16 @@
+import BaseballBettingCard from "./BaseballBettingCard/BaseballBettingCard"
+import BaseballBettingPageTopRow from "./BaseballBettingPageTopRow"
 
 
 const BaseballBettingPage = () => {
   return (
     <div>
-      <p>Fri Aug 25</p>
+      <BaseballBettingPageTopRow />
+      <BaseballBettingCard />
+      <BaseballBettingCard />
+      
 
-      <p>HOU Astros</p>
-      <p>DET Tigers</p>
-      <p>Money Line</p>
+    
     </div>
   )
 }
