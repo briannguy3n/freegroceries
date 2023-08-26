@@ -10,7 +10,6 @@ import Navbar from "./components/Navbar/Navbar"
 export default function Home() {
   return (
     <div className="h-full w-screen bg-freegroceries-100 justify-center items-center">
-
       <Navbar />
 
       <div className="flex w-screen h-screen justify-center items-center">
@@ -21,8 +20,6 @@ export default function Home() {
         {/* <Register /> */}
         {/* <Login /> */}
       </div>
-
     </div>
   )
 }
-
