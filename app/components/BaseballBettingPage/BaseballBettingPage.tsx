@@ -8,6 +8,7 @@ const BaseballBettingPage = () => {
       <BaseballBettingPageTopRow />
       <BaseballBettingCard />
       <BaseballBettingCard />
+      <BaseballBettingCard />
       
 
     

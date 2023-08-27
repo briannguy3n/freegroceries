@@ -8,6 +8,8 @@ const SectionHeader = () => {
         drop-shadow 
         font-bold
         text-6xl
+        flex
+        items-center
         "
     >Baseball
     </div>
