@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss";
+import type { Config } from "tailwindcss"
 
-const withMT = require("@material-tailwind/react/utils/withMT");
+const withMT = require("@material-tailwind/react/utils/withMT")
 
 module.exports = withMT({
   content: [
@@ -10,6 +10,19 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      colors: {
+        freegroceries: {
+          50: "#037d50",
+          100: "#1f493e",
+          200: "#024b30",
+          700: "#183f36",
+          800: "#17302b",
+          900: "#102923"
+        },
+        gold: {
+          200: "#d4ac66"
+        }
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -18,6 +31,6 @@ module.exports = withMT({
     },
   },
   plugins: [],
-});
+})
 
-export default withMT;
+export default withMT

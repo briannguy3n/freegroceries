@@ -1,16 +1,23 @@
-import Register from "./components/Register";
-import Login from "./components/Login";
-import Navbar from "./components/Navbar/Navbar";
+"use client"
+
+// @ts-ignore
+import BaseballBettingPage from "./components/BaseballBettingPage/BaseballBettingPage"
+import Register from "./components/Register"
+import Login from "./components/Login"
+import FeaturedGameScroller from "./components/FeaturedGameScroller/FeaturedGameScroller"
+import { MatchProvider } from "./util/MatchContext"
+import React from "react"
+import Navbar from "./components/Navbar/Navbar"
+import SectionHeader from "./components/SectionHeader"
+
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen bg-green-900 justify-center items-center">
-      {/* <div className="bg-green-700"></div> */}
+    <div className="h-screen flex flex-col px-[100px] justify-center">
       <Navbar />
-      <div className="flex w-screen h-screen justify-center items-center">
-        {/* <Register /> */}
-        <Login />
-      </div>
+      <SectionHeader />
+      <BaseballBettingPage />
+      
     </div>
-  );
+  )
 }
