@@ -3,6 +3,7 @@ const SectionHeader = () => {
     <div
       className="
         h-32
+        pl-10
       bg-freegroceries-200
         w-full
         drop-shadow 

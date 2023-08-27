@@ -2,13 +2,21 @@ import BaseballBettingCard from "./BaseballBettingCard/BaseballBettingCard"
 import BaseballBettingPageTopRow from "./BaseballBettingPageTopRow"
 
 
-const BaseballBettingPage = () => {
+const BaseballBettingPage = ({}) => {
+ 
+
   return (
-    <div>
+    <div className="">
       <BaseballBettingPageTopRow />
       <BaseballBettingCard />
       <BaseballBettingCard />
       <BaseballBettingCard />
+      <BaseballBettingCard />
+      <BaseballBettingCard />
+      <BaseballBettingCard />
+      <BaseballBettingCard />
+      <BaseballBettingCard />
+
       
 
     
@@ -17,14 +25,3 @@ const BaseballBettingPage = () => {
 }
 
 export default BaseballBettingPage
-
-
-/*
-
-BaseballBettingPageTopRow
-BaseBallCard
-    BaseBallMatchup
-        TeamName
-Money Line Odds
-
-*/
