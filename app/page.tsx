@@ -13,7 +13,7 @@ import SectionHeader from "./components/SectionHeader"
 
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col px-[100px] justify-center">
+    <div className="h-screen flex flex-col px-[100px] justify-center ">
       <Navbar />
       <SectionHeader />
       <BaseballBettingPage />
