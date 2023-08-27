@@ -31,6 +31,7 @@ Baseball Betting Card
 
 What do I wanna do
 
-Move everything into a smaller app looking view
+Ok time to figure out what I want to do next
+
 
 */
