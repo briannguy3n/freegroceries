@@ -13,11 +13,13 @@ import SectionHeader from "./components/SectionHeader"
 
 export default function Home() {
   return (
-    <div className="h-screen flex flex-col px-[100px] justify-center ">
-      <Navbar />
-      <SectionHeader />
-      <BaseballBettingPage />
+    <div className="h-screen flex justify-center">
+      <div className=" flex flex-col justify-center w-[800px]">
+        <Navbar />
+        <SectionHeader />
+        <BaseballBettingPage />
       
+      </div>
     </div>
   )
 }
