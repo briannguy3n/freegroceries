@@ -9,13 +9,13 @@ const BaseballBettingPage = ({}) => {
     <div className="">
       <BaseballBettingPageTopRow />
       <BaseballBettingCard />
+      {/* <BaseballBettingCard />
       <BaseballBettingCard />
       <BaseballBettingCard />
       <BaseballBettingCard />
       <BaseballBettingCard />
       <BaseballBettingCard />
-      <BaseballBettingCard />
-      <BaseballBettingCard />
+      <BaseballBettingCard /> */}
 
       
 
