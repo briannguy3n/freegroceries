@@ -26,12 +26,14 @@ Baseball Betting Card
 */
 
 
+// --------------------------------------------
 
 /* 
 
-What do I wanna do
+WHAT DO I WANNA DO
 
-Ok time to figure out what I want to do next
+Make Baseball Card unique
+Team names and odds
 
 
 */
